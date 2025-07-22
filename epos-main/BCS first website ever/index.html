@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Poečetna</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,600;1,200&display=swap" rel="stylesheet">
+	<style>
+		.burger {
+			display: none;
+			flex-direction: column;
+			cursor: pointer;
+			padding: 20px;
+		}
+
+		.burger div {
+			width: 25px;
+			height: 3px;
+			background-color: lightyellow;
+			margin: 4px;
+			transition: 0.4s;
+		}
+
+		@media (max-width: 760px) {
+			header {
+				flex-wrap: wrap;
+				align-items: center;
+			}
+			.burger {
+				display: flex;
+			}
+			.main-menu ul {
+				display: none;
+				flex-direction: column;
+            align-items: center;
+				width: 100%;
+				background-color: #000000;
+				position: absolute;
+				top: 80px;
+				left: 0;
+				z-index: 10;
+			}
+			.main-menu ul.active {
+				display: flex;
+			}
+			.main-menu ul li {
+				text-align: center;
+				margin: 10px 0;
+            width: 150px;
+			}
+			.tx h1 {
+				font-size: 2.5rem;
+			}
+			.tx p {
+				font-size: 1.2rem;
+            margin-top: 60px;
+			}
+			.btn {
+				font-size: 1rem;
+				padding: 10px 20px;
+			}
+		}
+	</style>
+</head>
+<body>
+<header>
+	<img class="logo" src="img/logo1.png">
+
+	<div class="burger" id="burger">
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+
+	<div class="main-menu">
+		<ul id="nav-links">
+			<li><a href="index.html">Početna</a></li>
+			<li><a href="ONama.html">O nama</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</ul>
+	</div>
+</header>
+
+<div class="tx">
+	<h1>BOLJE POZOVI SAULA</h1>
+	<p>Najbolja kriminalistička odbrana koju novac može kupiti</p>
+</div>
+
+<div class="container">
+	<a href="kontakt.html"><button class='btn'>ANGAŽUJ ME</button></a>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
