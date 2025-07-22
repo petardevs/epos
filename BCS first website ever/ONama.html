@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>O nama</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,600;1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="ABOUTUS">
+<header>
+	<img class="logo"src="img/logo1.png">
+		
+	<div class="main-menu">
+		<ul>
+			<li><a href="index.html">Početna</a></li>
+			<li><a href="ONama.html">O nama</a></li>
+			
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</ul>
+	</div>
+</header>
+
+<div class="cont">
+	<div class="tekst">
+		
+
+		<h1>KO JE SAUL?</h1>
+		<p >Džejms Morgan „Džimi“ Mekgil, poznatiji pod svojim profesionalnim imenom Sol Gudman, je advokat iz Albukerkija, javni branilac i advokat za krivična dela. </p>
+		<br>
+		<p>Džimi je radio u kancelariji tržnog centra u Albukerkiju u Novom Meksiku, pre nego što je radio u kompanijama Hamlin, Hamlin & McGill i Davis & Main. Kasnije je osnovao sopstvenu firmu "Saul Goodman & Associates".</p><br>
+		<p>Ako ste u legalnoj nevolji i ne znate kome da se obratite, <span>BOLJE POZOVITE SAULA!</span></p>
+		<button class="szv"><a href="kontakt.html">Saznaj više</a></button>
+	</div>
+
+
+	<div class="slike">
+		<img src="img/sol1.jpg">
+
+
+	</div>
+
+</div>
+
+<div class="cont-2">
+	<h1>Zadovoljni klijenti</h1>
+	<div class="klijenti">
+		<div class="klijent">
+			<img src="img/jese.jpg">
+			<h2>Džesi Pinkmen</h2>
+			<p>"Joo gosm Gudmen je najbolji advokat na svetu. Pomogao je mom prijatelju Bedzeru i izvukao ga je iz ćuze. Kompanija gosm Gudmena je najjača advokasta kompanija u univerzumu. Pomogao mi je da na legalan način kupim kuću svojih roditelja .Recite svim svojim prijateljima da dodju kod čika Sola, neće požaliti." </p>
+		</div>
+
+		<div class="klijent walt">
+			<img src="img/walt.jpg">
+			<h2>Volter Vajt</h2>
+			<p>"Veoma sam zadovaljan uslugama Sola Gudmena, simpatičan je gospodin i zna dobro da radi svoj posao. Imao sam probleme sa svojom histeričnom ženom, ali on ih je veoma lako rešio. Pomogao mi je da kupim auto perionicu, što mi je bio dečački san. Naučio me je kako da perem novac unutra, jer zna da se isprlja veoma lako." </p>
+			
+		</div>
+
+		<div class="klijent">
+			<img src="img/majk.jpg">
+			<h2>Majk Ermantraut</h2>
+			<p>"Dugo sam radio kod Sola i mogu reći da je veoma mudra individua. Bio sam mu šef obezbeđenja, i mogu reći da kod njega dolazi sama elita, tako da ako Vas primi kao klijenta imate sreće. Lično mogu reći da me je čak dva puta spasao robije, tako da ako imate problem ali i novca bolje pozovite Sola!" </p>
+		</div>
+
+	</div>
+
+</div>
+		
+</div>
+
+<div class="overlay"></div>
+<div class='amogus'><img src="img/sus.gif"></div>
+<script src="https://kit.fontawesome.com/a89bf28783.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	let tajnoDug=document.querySelector('.tekst p span')
+	console.log(tajnoDug)
+	let i=0;
+	let sus=document.querySelector('.amogus')
+	let over=document.querySelector('.overlay')
+	tajnoDug.addEventListener("click",()=>{
+	
+		i++;
+		if(i==5){
+			over.style.display='block'
+			sus.style.display='block'
+		}
+
+
+	})
+
+</script>
+</body>
+</html>
